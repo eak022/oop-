@@ -103,12 +103,4 @@ class Customer {
     }
   }
   
-  const main = () => {
-    const goldDiscountRate = new DiscountRate(0.15);
-    const customer1 = new Customer("Vick", true, goldDiscountRate);
-    const visit1 = new Visit(customer1, "2024/02/13", 500, 500);
-  
-    console.log(customer1.toString());
-  };
-  main();
   
