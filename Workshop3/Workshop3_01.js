@@ -83,20 +83,7 @@ class Book {
     }
 }
 
-const main = () => {
-    const author1 = new Author("Vick", "Vick@gmail.com");
-    const author2 = new Author("Mind", "Mind@gmail.com");
-    console.log(author1.toString());
-    console.log(author2.toString());
 
-    const Book1 = new Book("กระต่ายกับเต่า", [author1, author2], 50, 5);
-    console.log(Book1.toString());
-
-    const authorsNames = Book1.getAuthorsName();
-    console.log(authorsNames);
-}
-
-main();
 
 
 
