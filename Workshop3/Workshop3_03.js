@@ -97,18 +97,4 @@ class Person {
     }
   }
   
-  const main = () => {
-    const person1 = new Person("Vick", "Ban Vick");
-    const student1 = new Student(
-      "Vick",
-      "Vick Condo",
-      "Software Engineer",
-      65,
-      11400
-    );
-    const staff1 = new Staff("Vick", "Vick Condo", "npru", 11400);
-  
-    console.log(student1.toString());
-  };
-  
-  main();
+ 
