@@ -108,17 +108,3 @@ class Square extends Rectangle {
         return `Square[${super.toString()}]`;
     }
 }
-
-const main = () => { 
-    const circle = new Circle(3);
-    const rectangle = new Rectangle(3, 5);
-    const square = new Square(4);
-
-    console.log(circle.toString());
-
-    console.log(rectangle.toString()); 
-
-    console.log(square.toString());     
-};
-
-main();
