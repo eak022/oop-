@@ -69,12 +69,4 @@ class Customer{
         }
     }
 
-    const main = ()=> {
-        const customer1 = new Customer(1,"Kay", 10);
-
-        const invoice1 = new Invoice(1, customer1, 100)
-        console.log(customer1.toString());
-        console.log(invoice1.getAmountAfterDiscount());
-        
-    }
-    main();
+  
