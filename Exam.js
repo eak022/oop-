@@ -49,6 +49,7 @@ class Person {
     this.phone = phone;
     this.accountType = accountType;
   }
+  
 }
 
 class Receptionist extends Person {
@@ -161,6 +162,25 @@ class BookingStatus {
   }
 }
 
+function printPersonDetails(person) {
+  console.log("- ที่อยู่:", person.address);
+  console.log("- อีเมล:", person.email);
+  console.log("- เบอร์โทร:", person.phone);
+}
+
+function printGuestDetails(guest) {
+  console.log("Guests:");
+  console.log("- " + guest.name + ":");
+  printPersonDetails(guest);
+  console.log("- จำนวนการจองทั้งหมด:", guest.totalBooking);
+}
+
+function printReceptionistDetails(receptionist) {
+  console.log("Receptionists:");
+  console.log("- " + receptionist.name + ":");
+  printPersonDetails(receptionist);
+}
+
 // Create instances of guests
 const alice = new Guest(
   "Alice",
@@ -195,7 +215,12 @@ const david = new Receptionist(
   AccountType.Receptionist
 );
 
-
+// เรียกใช้งานฟังก์ชันเพื่อพิมพ์รายละเอียดของแต่ละบุคคล
+printGuestDetails(alice);
+printGuestDetails(bob);
+printReceptionistDetails(catherine);
+printReceptionistDetails(david);
+console.log("\n");
 // Create hotel
 const hotel = new Hotel("Luxury Hotel", "Beachfront");
 
@@ -232,7 +257,7 @@ hotel.addNewRooms(twinBedSeaViewRoom);
 hotel.addNewRooms(doubleBedPoolViewRoom);
 
 // Print room details
-console.log("Room Details:");
+console.log(hotel.name);
 console.log(hotel.getRooms());
 
 // Booking for Bob
